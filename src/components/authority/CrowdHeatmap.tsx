@@ -72,7 +72,7 @@ const CrowdHeatmap = ({ templeData, selectedTemple, onTempleChange }) => {
       <Card>
         <CardHeader>
           <CardTitle className="flex items-center gap-2">
-            <Activity className="h-5 w-5 text-violet-600" />
+            <Activity className="h-5 w-5 text-amber-600" />
             Crowd Heat Map - Real-time Monitoring
           </CardTitle>
           <CardDescription>
@@ -93,7 +93,7 @@ const CrowdHeatmap = ({ templeData, selectedTemple, onTempleChange }) => {
           <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center justify-between">
             <div className="flex items-center gap-4">
               <div className="flex items-center gap-2">
-                <Filter className="h-4 w-4 text-violet-600" />
+                <Filter className="h-4 w-4 text-amber-600" />
                 <span className="font-medium">View:</span>
               </div>
               
@@ -133,7 +133,7 @@ const CrowdHeatmap = ({ templeData, selectedTemple, onTempleChange }) => {
       <Card>
         <CardHeader>
           <CardTitle className="flex items-center gap-2">
-            <MapPin className="h-5 w-5 text-violet-600" />
+            <MapPin className="h-5 w-5 text-amber-600" />
             {currentTemple.name} - Zone Heat Map
           </CardTitle>
           <CardDescription>
@@ -276,7 +276,7 @@ const CrowdHeatmap = ({ templeData, selectedTemple, onTempleChange }) => {
       <Card>
         <CardHeader>
           <CardTitle className="flex items-center gap-2">
-            <TrendingUp className="h-5 w-5 text-violet-600" />
+            <TrendingUp className="h-5 w-5 text-amber-600" />
             Hourly Trend Analysis
           </CardTitle>
           <CardDescription>Crowd density patterns throughout the day</CardDescription>

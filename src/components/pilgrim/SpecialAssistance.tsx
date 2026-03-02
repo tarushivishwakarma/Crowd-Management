@@ -8,7 +8,7 @@ import { Input } from '../ui/input';
 import { Label } from '../ui/label';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '../ui/select';
 import { Textarea } from '../ui/textarea';
-import { toast } from 'sonner@2.0.3';
+import { toast } from 'sonner';
 import { Language } from '../../utils/translations';
 
 interface SpecialAssistanceProps {
@@ -92,7 +92,7 @@ const SpecialAssistance: React.FC<SpecialAssistanceProps> = ({ selectedTemple, t
 
   const handleRequestSubmit = (e) => {
     e.preventDefault();
-    
+
     if (!requestForm.name || !requestForm.phone || !requestForm.assistanceType) {
       toast.error('Please fill all required fields');
       return;
@@ -100,7 +100,7 @@ const SpecialAssistance: React.FC<SpecialAssistanceProps> = ({ selectedTemple, t
 
     // Simulate request submission
     toast.success('Special assistance request submitted successfully! You will be contacted within 30 minutes.');
-    
+
     // Reset form
     setRequestForm({
       name: '',
@@ -119,7 +119,7 @@ const SpecialAssistance: React.FC<SpecialAssistanceProps> = ({ selectedTemple, t
       <Card>
         <CardHeader>
           <CardTitle className="flex items-center gap-2">
-            <Users className="h-5 w-5 text-purple-600" />
+            <Users className="h-5 w-5 text-orange-600" />
             Special Assistance Services - {currentTemple.name}
           </CardTitle>
           <CardDescription>
@@ -131,11 +131,10 @@ const SpecialAssistance: React.FC<SpecialAssistanceProps> = ({ selectedTemple, t
       {/* Service Categories */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {Object.entries(assistanceServices).map(([key, service]) => (
-          <Card 
-            key={key} 
-            className={`hover:shadow-md transition-all cursor-pointer ${
-              selectedService === key ? 'ring-2 ring-purple-500 shadow-lg' : ''
-            }`}
+          <Card
+            key={key}
+            className={`hover:shadow-md transition-all cursor-pointer ${selectedService === key ? 'ring-2 ring-orange-500 shadow-lg' : ''
+              }`}
             onClick={() => setSelectedService(selectedService === key ? '' : key)}
           >
             <CardContent className="p-6">
@@ -153,14 +152,14 @@ const SpecialAssistance: React.FC<SpecialAssistanceProps> = ({ selectedTemple, t
                       </li>
                     ))}
                     {service.services.length > 3 && (
-                      <li className="text-purple-600 font-medium">
+                      <li className="text-orange-600 font-medium">
                         +{service.services.length - 3} more services
                       </li>
                     )}
                   </ul>
-                  
+
                   <div className="mt-3 flex items-center gap-2 text-sm">
-                    <Phone className="h-4 w-4 text-purple-600" />
+                    <Phone className="h-4 w-4 text-orange-600" />
                     <span className="font-medium">{service.contactNumber}</span>
                   </div>
                 </div>
@@ -222,7 +221,7 @@ const SpecialAssistance: React.FC<SpecialAssistanceProps> = ({ selectedTemple, t
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="space-y-2">
                 <Label htmlFor="assistanceType">Assistance Type *</Label>
-                <Select 
+                <Select
                   value={requestForm.assistanceType}
                   onValueChange={(value) => setRequestForm(prev => ({ ...prev, assistanceType: value }))}
                 >
@@ -240,7 +239,7 @@ const SpecialAssistance: React.FC<SpecialAssistanceProps> = ({ selectedTemple, t
 
               <div className="space-y-2">
                 <Label htmlFor="groupSize">Group Size</Label>
-                <Select 
+                <Select
                   value={requestForm.groupSize}
                   onValueChange={(value) => setRequestForm(prev => ({ ...prev, groupSize: value }))}
                 >
@@ -248,7 +247,7 @@ const SpecialAssistance: React.FC<SpecialAssistanceProps> = ({ selectedTemple, t
                     <SelectValue />
                   </SelectTrigger>
                   <SelectContent>
-                    {[1,2,3,4,5,6,7,8,9,10].map(num => (
+                    {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map(num => (
                       <SelectItem key={num} value={num.toString()}>{num} {num === 1 ? 'person' : 'people'}</SelectItem>
                     ))}
                   </SelectContent>
@@ -258,7 +257,7 @@ const SpecialAssistance: React.FC<SpecialAssistanceProps> = ({ selectedTemple, t
 
             <div className="space-y-2">
               <Label htmlFor="preferredTime">Preferred Visit Time</Label>
-              <Select 
+              <Select
                 value={requestForm.preferredTime}
                 onValueChange={(value) => setRequestForm(prev => ({ ...prev, preferredTime: value }))}
               >
@@ -286,9 +285,9 @@ const SpecialAssistance: React.FC<SpecialAssistanceProps> = ({ selectedTemple, t
               />
             </div>
 
-            <Button 
-              type="submit" 
-              className="w-full bg-purple-600 hover:bg-purple-700"
+            <Button
+              type="submit"
+              className="w-full bg-orange-600 hover:bg-orange-700"
               size="lg"
             >
               Submit Assistance Request
@@ -298,12 +297,12 @@ const SpecialAssistance: React.FC<SpecialAssistanceProps> = ({ selectedTemple, t
       </Card>
 
       {/* Emergency Contacts */}
-      <Card className="bg-purple-50 border-purple-200">
+      <Card className="bg-orange-50 border-orange-200">
         <CardContent className="p-6">
           <div className="flex items-start gap-4">
-            <Phone className="h-6 w-6 text-purple-600 mt-1" />
+            <Phone className="h-6 w-6 text-orange-600 mt-1" />
             <div>
-              <h3 className="font-semibold text-purple-900 mb-2">24/7 Emergency Assistance</h3>
+              <h3 className="font-semibold text-orange-900 mb-2">24/7 Emergency Assistance</h3>
               <div className="space-y-2 text-sm">
                 <div className="flex items-center gap-2">
                   <Badge className="bg-red-100 text-red-800">Medical Emergency</Badge>
@@ -327,7 +326,7 @@ const SpecialAssistance: React.FC<SpecialAssistanceProps> = ({ selectedTemple, t
       <Alert className="bg-blue-50 border-blue-200">
         <MapPin className="h-4 w-4 text-blue-600" />
         <AlertDescription>
-          <strong>Location Services:</strong> All assistance services are available at dedicated counters 
+          <strong>Location Services:</strong> All assistance services are available at dedicated counters
           near the main entrance. Look for the purple "Special Assistance" signage or ask any temple volunteer.
         </AlertDescription>
       </Alert>

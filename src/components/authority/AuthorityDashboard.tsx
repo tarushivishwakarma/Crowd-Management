@@ -71,8 +71,8 @@ const AuthorityDashboard = ({ templeData, selectedTemple, onTempleChange, events
                   {totalCrowdLevel > 70 ? 'High' : totalCrowdLevel > 40 ? 'Moderate' : 'Low'} Density
                 </p>
               </div>
-              <div className="p-3 bg-purple-100 rounded-full">
-                <Users className="h-6 w-6 text-purple-600" />
+              <div className="p-3 bg-orange-100 rounded-full">
+                <Users className="h-6 w-6 text-orange-600" />
               </div>
             </div>
             <Progress value={totalCrowdLevel} className="mt-3" />
@@ -143,7 +143,7 @@ const AuthorityDashboard = ({ templeData, selectedTemple, onTempleChange, events
       <Card>
         <CardHeader>
           <CardTitle className="flex items-center gap-2">
-            <Eye className="h-5 w-5 text-violet-600" />
+            <Eye className="h-5 w-5 text-amber-600" />
             Live Zone Monitoring - {currentTemple.name}
           </CardTitle>
           <CardDescription>Real-time crowd density and status across all temple zones</CardDescription>
@@ -151,7 +151,7 @@ const AuthorityDashboard = ({ templeData, selectedTemple, onTempleChange, events
         <CardContent>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {Object.entries(crowdData).map(([zoneId, zone]) => (
-              <Card key={zoneId} className="border-l-4 border-l-violet-500">
+              <Card key={zoneId} className="border-l-4 border-l-amber-500">
                 <CardContent className="p-4">
                   <div className="flex items-center justify-between mb-3">
                     <h4 className="font-medium">{zone.name}</h4>
@@ -195,7 +195,7 @@ const AuthorityDashboard = ({ templeData, selectedTemple, onTempleChange, events
         <Card>
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
-              <Shield className="h-5 w-5 text-violet-600" />
+              <Shield className="h-5 w-5 text-amber-600" />
               System Health
             </CardTitle>
           </CardHeader>
@@ -224,7 +224,7 @@ const AuthorityDashboard = ({ templeData, selectedTemple, onTempleChange, events
         <Card>
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
-              <Clock className="h-5 w-5 text-violet-600" />
+              <Clock className="h-5 w-5 text-amber-600" />
               Recent Activity
             </CardTitle>
           </CardHeader>

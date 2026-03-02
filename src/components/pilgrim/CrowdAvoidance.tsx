@@ -8,7 +8,7 @@ import { Progress } from '../ui/progress';
 
 const CrowdAvoidance = ({ templeData, selectedTemple }) => {
   const [selectedDay, setSelectedDay] = useState('today');
-  
+
   const currentTemple = templeData[selectedTemple];
 
   // Crowd patterns and recommendations
@@ -123,7 +123,7 @@ const CrowdAvoidance = ({ templeData, selectedTemple }) => {
       <Card>
         <CardHeader>
           <CardTitle className="flex items-center gap-2">
-            <TrendingDown className="h-5 w-5 text-purple-600" />
+            <TrendingDown className="h-5 w-5 text-orange-600" />
             Crowd Avoidance Guide - {currentTemple.name}
           </CardTitle>
           <CardDescription>
@@ -156,14 +156,14 @@ const CrowdAvoidance = ({ templeData, selectedTemple }) => {
           </CardContent>
         </Card>
 
-        <Card className="border-purple-200 bg-purple-50">
+        <Card className="border-orange-200 bg-orange-50">
           <CardContent className="p-4">
             <div className="flex items-center gap-2 mb-2">
-              <Moon className="h-4 w-4 text-purple-600" />
-              <span className="text-sm font-medium text-purple-800">Best Season</span>
+              <Moon className="h-4 w-4 text-orange-600" />
+              <span className="text-sm font-medium text-orange-800">Best Season</span>
             </div>
-            <p className="font-bold text-purple-900">Monsoon</p>
-            <p className="text-xs text-purple-700">Lowest yearly crowd</p>
+            <p className="font-bold text-orange-900">Monsoon</p>
+            <p className="text-xs text-orange-700">Lowest yearly crowd</p>
           </CardContent>
         </Card>
 
@@ -183,7 +183,7 @@ const CrowdAvoidance = ({ templeData, selectedTemple }) => {
       <Card>
         <CardHeader>
           <CardTitle className="flex items-center gap-2">
-            <Clock className="h-5 w-5 text-purple-600" />
+            <Clock className="h-5 w-5 text-orange-600" />
             Today's Hourly Crowd Forecast
           </CardTitle>
           <CardDescription>Real-time predictions for the next 24 hours</CardDescription>
@@ -212,7 +212,7 @@ const CrowdAvoidance = ({ templeData, selectedTemple }) => {
       <Card>
         <CardHeader>
           <CardTitle className="flex items-center gap-2">
-            <Calendar className="h-5 w-5 text-purple-600" />
+            <Calendar className="h-5 w-5 text-orange-600" />
             Weekly Crowd Forecast
           </CardTitle>
           <CardDescription>Plan your visit for the entire week</CardDescription>
@@ -244,7 +244,7 @@ const CrowdAvoidance = ({ templeData, selectedTemple }) => {
       <Alert className="bg-red-50 border-red-200">
         <Star className="h-4 w-4 text-red-600" />
         <AlertDescription>
-          <strong>Festival Alert:</strong> During festivals like {currentPattern.festivalDays.join(', ')}, 
+          <strong>Festival Alert:</strong> During festivals like {currentPattern.festivalDays.join(', ')},
           expect 200-300% higher crowds. Consider visiting 2-3 days before or after festival dates for a peaceful darshan.
         </AlertDescription>
       </Alert>
@@ -253,7 +253,7 @@ const CrowdAvoidance = ({ templeData, selectedTemple }) => {
       <Card>
         <CardHeader>
           <CardTitle className="flex items-center gap-2">
-            <TrendingDown className="h-5 w-5 text-purple-600" />
+            <TrendingDown className="h-5 w-5 text-orange-600" />
             Seasonal Crowd Trends
           </CardTitle>
           <CardDescription>Historical data to help you plan long-term visits</CardDescription>

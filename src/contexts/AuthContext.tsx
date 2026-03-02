@@ -4,7 +4,7 @@
  */
 import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
 import { authApi, User, LoginCredentials, RegisterData } from '../services/api';
-import { toast } from 'sonner@2.0.3';
+import { toast } from 'sonner';
 
 interface AuthContextType {
   user: User | null;

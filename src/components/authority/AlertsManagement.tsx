@@ -8,7 +8,7 @@ import { Label } from '../ui/label';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '../ui/select';
 import { Textarea } from '../ui/textarea';
 import { Alert, AlertDescription } from '../ui/alert';
-import { toast } from 'sonner@2.0.3';
+import { toast } from 'sonner';
 
 const AlertsManagement = ({ templeData, selectedTemple, events, setEvents }) => {
   const [activeAlerts, setActiveAlerts] = useState([
@@ -47,7 +47,7 @@ const AlertsManagement = ({ templeData, selectedTemple, events, setEvents }) => 
   const alertTypes = {
     crowd: { label: 'Crowd Management', color: 'bg-orange-100 text-orange-800', icon: Users },
     medical: { label: 'Medical Emergency', color: 'bg-red-100 text-red-800', icon: AlertTriangle },
-    security: { label: 'Security Alert', color: 'bg-purple-100 text-purple-800', icon: AlertTriangle },
+    security: { label: 'Security Alert', color: 'bg-orange-100 text-orange-800', icon: AlertTriangle },
     maintenance: { label: 'Maintenance Issue', color: 'bg-blue-100 text-blue-800', icon: AlertTriangle },
     weather: { label: 'Weather Alert', color: 'bg-gray-100 text-gray-800', icon: AlertTriangle }
   };
@@ -173,7 +173,7 @@ const AlertsManagement = ({ templeData, selectedTemple, events, setEvents }) => 
       <Card>
         <CardHeader>
           <CardTitle className="flex items-center gap-2">
-            <Plus className="h-5 w-5 text-violet-600" />
+            <Plus className="h-5 w-5 text-amber-600" />
             Create New Alert
           </CardTitle>
           <CardDescription>Manually create and dispatch alerts to response teams</CardDescription>
@@ -252,7 +252,7 @@ const AlertsManagement = ({ templeData, selectedTemple, events, setEvents }) => 
 
           <Button 
             onClick={handleCreateAlert}
-            className="mt-4 bg-violet-600 hover:bg-violet-700"
+            className="mt-4 bg-amber-600 hover:bg-amber-700"
           >
             <Send className="h-4 w-4 mr-2" />
             Create & Dispatch Alert
@@ -264,7 +264,7 @@ const AlertsManagement = ({ templeData, selectedTemple, events, setEvents }) => 
       <Card>
         <CardHeader>
           <CardTitle className="flex items-center gap-2">
-            <Bell className="h-5 w-5 text-violet-600" />
+            <Bell className="h-5 w-5 text-amber-600" />
             Alert Management - {currentTemple.name}
           </CardTitle>
           <CardDescription>Monitor and manage all active and recent alerts</CardDescription>
@@ -282,12 +282,12 @@ const AlertsManagement = ({ templeData, selectedTemple, events, setEvents }) => 
                 const AlertIcon = alertTypes[alert.type]?.icon || AlertTriangle;
                 
                 return (
-                  <Card key={alert.id} className="border-l-4 border-l-violet-500">
+                  <Card key={alert.id} className="border-l-4 border-l-amber-500">
                     <CardContent className="p-4">
                       <div className="flex items-start justify-between mb-3">
                         <div className="flex items-start gap-3">
-                          <div className="p-2 bg-violet-100 rounded-lg">
-                            <AlertIcon className="h-4 w-4 text-violet-600" />
+                          <div className="p-2 bg-amber-100 rounded-lg">
+                            <AlertIcon className="h-4 w-4 text-amber-600" />
                           </div>
                           <div>
                             <div className="flex items-center gap-2 mb-1">

@@ -158,7 +158,7 @@ const HistoricalIncidents = ({ selectedTemple, templeData }) => {
       <Card>
         <CardHeader>
           <CardTitle className="flex items-center gap-2">
-            <AlertTriangle className="h-5 w-5 text-purple-600" />
+            <AlertTriangle className="h-5 w-5 text-orange-600" />
             Historical Incidents - {currentTemple.name}
           </CardTitle>
           <CardDescription>
@@ -176,7 +176,7 @@ const HistoricalIncidents = ({ selectedTemple, templeData }) => {
                 <p className="text-sm text-gray-600">Total Incidents (2024)</p>
                 <p className="text-2xl font-bold">{currentData.totalIncidents}</p>
               </div>
-              <AlertTriangle className="h-8 w-8 text-purple-600" />
+              <AlertTriangle className="h-8 w-8 text-orange-600" />
             </div>
           </CardContent>
         </Card>
@@ -213,10 +213,10 @@ const HistoricalIncidents = ({ selectedTemple, templeData }) => {
         <CardContent className="p-4">
           <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center">
             <div className="flex items-center gap-2">
-              <Filter className="h-4 w-4 text-purple-600" />
+              <Filter className="h-4 w-4 text-orange-600" />
               <span className="font-medium">Filters:</span>
             </div>
-            
+
             <Select value={selectedFilter} onValueChange={setSelectedFilter}>
               <SelectTrigger className="w-[180px]">
                 <SelectValue placeholder="Incident Type" />
@@ -309,11 +309,11 @@ const HistoricalIncidents = ({ selectedTemple, templeData }) => {
       </div>
 
       {/* Safety Information */}
-      <Alert className="bg-purple-50 border-purple-200">
-        <Info className="h-4 w-4 text-purple-600" />
+      <Alert className="bg-orange-50 border-orange-200">
+        <Info className="h-4 w-4 text-orange-600" />
         <AlertDescription>
-          <strong>Safety Commitment:</strong> All incidents are thoroughly investigated and preventive measures 
-          are implemented to ensure pilgrim safety. Our continuous improvement approach has resulted in a 
+          <strong>Safety Commitment:</strong> All incidents are thoroughly investigated and preventive measures
+          are implemented to ensure pilgrim safety. Our continuous improvement approach has resulted in a
           {currentData.recentTrend === 'decreasing' ? ' significant decrease' : ' stable trend'} in incidents.
         </AlertDescription>
       </Alert>

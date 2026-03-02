@@ -11,16 +11,16 @@ export const translations = {
     bookings: 'Bookings',
     assistance: 'Assistance',
     incidents: 'Incidents',
-    facilities: 'Facilities',
-    transport: 'Transport',
-    dashboard: 'Dashboard',
+    facilitiesLabel: 'Facilities',
+    transportLabel: 'Transport',
+    dashboardLabel: 'Dashboard',
     heatMap: 'Heat Map',
     alerts: 'Alerts',
     resources: 'Resources',
     analytics: 'Analytics',
     monitoring: 'Monitoring',
     language: 'Language',
-    
+
     // Temple names
     temples: {
       somnath: 'Somnath Temple',
@@ -28,7 +28,7 @@ export const translations = {
       ambaji: 'Ambaji Temple',
       pavagadh: 'Kalika Mata Temple'
     },
-    
+
     // Zone names
     zones: {
       mainDarshan: 'Main Darshan Hall',
@@ -39,13 +39,13 @@ export const translations = {
       gabbarHill: 'Gabbar Hill Path',
       ropeway: 'Ropeway Station'
     },
-    
+
     // Pilgrim Interface
     pilgrim: {
       title: 'Pilgrim',
       description: 'Your spiritual journey begins here',
       welcomeMessage: 'Welcome to your spiritual journey',
-      
+
       // Navigation
       homeTab: 'Home',
       bookingsTab: 'Darshan Bookings',
@@ -53,7 +53,7 @@ export const translations = {
       incidentsTab: 'Safety Reports',
       facilitiesTab: 'Temple Map',
       transportTab: 'Transport',
-      
+
       // Features
       features: {
         bookDarshan: 'Book Darshan',
@@ -64,14 +64,14 @@ export const translations = {
         transportInfo: 'Transport Assistance'
       }
     },
-    
+
     // Authority Interface
     authority: {
       title: 'Authority',
       subtitle: 'Authority Dashboard',
       description: 'Temple management and monitoring system',
       active: 'Active',
-      
+
       // Navigation
       dashboardTab: 'Overview',
       heatmapTab: 'Crowd Heatmap',
@@ -80,11 +80,11 @@ export const translations = {
       analyticsTab: 'Footfall Analytics',
       monitoringTab: 'Live Monitoring'
     },
-    
+
     // Status messages
     status: {
       low: 'Low',
-      moderate: 'Moderate', 
+      moderate: 'Moderate',
       high: 'High',
       critical: 'Critical',
       waiting: 'Please wait...',
@@ -93,7 +93,7 @@ export const translations = {
       error: 'Error',
       warning: 'Warning'
     },
-    
+
     // Emergency
     emergency: {
       sos: 'Emergency SOS',
@@ -103,7 +103,7 @@ export const translations = {
       securityHelp: 'Security Help',
       fireEmergency: 'Fire Emergency'
     },
-    
+
     // Booking
     booking: {
       selectTemple: 'Select Temple',
@@ -147,7 +147,7 @@ export const translations = {
       darshanBookingConfirmed: 'Darshan booking confirmed! Check My Bookings for details.',
       creatingBooking: 'Creating Booking...'
     },
-    
+
     // My Bookings
     myBookings: {
       title: 'My Bookings',
@@ -174,7 +174,7 @@ export const translations = {
       bookingCancelled: 'Booking cancelled successfully',
       failedToCancelBooking: 'Failed to cancel booking'
     },
-    
+
     // Facilities & Transport
     facilities: {
       facilitiesMap: 'Facilities Map',
@@ -194,7 +194,7 @@ export const translations = {
       active: 'Active',
       capacity: 'Capacity'
     },
-    
+
     transport: {
       liveShuttleTracking: 'Live Shuttle Tracking',
       realTimeLocation: 'Real-time location and availability of shuttle services',
@@ -229,7 +229,7 @@ export const translations = {
       spacesFree: 'spaces free',
       nearlyFull: 'nearly_full'
     },
-    
+
     // Crowd Avoidance
     crowdAvoidance: {
       title: 'Crowd Avoidance Guide',
@@ -260,7 +260,7 @@ export const translations = {
       avoid: 'Avoid',
       peak: 'Peak'
     },
-    
+
     // Historical Incidents
     historicalIncidents: {
       title: 'Historical Incidents',
@@ -293,7 +293,7 @@ export const translations = {
       stable: 'Stable',
       increasing: 'Increasing'
     },
-    
+
     // Special Assistance
     specialAssistance: {
       title: 'Special Assistance Services',
@@ -326,7 +326,7 @@ export const translations = {
       moreServices: 'more services',
       assistanceRequestSubmitted: 'Special assistance request submitted successfully! You will be contacted within 30 minutes.'
     },
-    
+
     // Dashboard
     dashboard: {
       welcomeToTemples: 'Welcome to Gujarat\'s Sacred Temples',
@@ -345,7 +345,7 @@ export const translations = {
       liveStats: 'Live Stats',
       min: 'min'
     },
-    
+
     // QR Code Display
     qrCode: {
       darshanBookingQRCode: 'Darshan Booking QR Code',
@@ -366,7 +366,7 @@ export const translations = {
       qrCodeNotAvailable: 'QR code not available'
     }
   },
-  
+
   hi: {
     // Common translations
     appName: 'मंदिर इनसाइट 360',
@@ -376,16 +376,16 @@ export const translations = {
     bookings: 'बुकिंग',
     assistance: 'सहायता',
     incidents: 'घटनाएं',
-    facilities: 'सुविधाएं',
-    transport: 'परिवहन',
-    dashboard: 'डैशबोर्ड',
+    facilitiesLabel: 'सुविधाएं',
+    transportLabel: 'परिवहन',
+    dashboardLabel: 'डैशबोर्ड',
     heatMap: 'हीट मैप',
     alerts: 'अलर्ट',
     resources: 'संसाधन',
     analytics: 'एनालिटिक्स',
     monitoring: 'निगरानी',
     language: 'भाषा',
-    
+
     // Temple names
     temples: {
       somnath: 'सोमनाथ मंदिर',
@@ -393,7 +393,7 @@ export const translations = {
       ambaji: 'अम्बाजी मंदिर',
       pavagadh: 'कालिका माता मंदिर'
     },
-    
+
     // Zone names
     zones: {
       mainDarshan: 'मुख्य दर्शन हॉल',
@@ -404,13 +404,13 @@ export const translations = {
       gabbarHill: 'गब्बर हिल पथ',
       ropeway: 'रोपवे स्टेशन'
     },
-    
+
     // Pilgrim Interface
     pilgrim: {
       title: 'तीर्थयात्री',
       description: 'आपकी आध्यात्मिक यात्रा यहां शुरू होती है',
       welcomeMessage: 'आपकी आध्यात्मिक यात्रा में आपका स्वागत है',
-      
+
       // Navigation
       homeTab: 'होम',
       bookingsTab: 'दर्शन बुकिंग',
@@ -418,7 +418,7 @@ export const translations = {
       incidentsTab: 'सुरक्षा रिपोर्ट',
       facilitiesTab: 'मंदिर मानचित्र',
       transportTab: 'परिवहन',
-      
+
       // Features
       features: {
         bookDarshan: 'दर्शन बुक करें',
@@ -429,14 +429,14 @@ export const translations = {
         transportInfo: 'परिवहन सहायता'
       }
     },
-    
+
     // Authority Interface
     authority: {
       title: 'प्राधिकरण',
       subtitle: 'प्राधिकरण डैशबोर्ड',
       description: 'मंदिर प्रबंधन और निगरानी प्रणाली',
       active: 'सक्रिय',
-      
+
       // Navigation
       dashboardTab: 'अवलोकन',
       heatmapTab: 'भीड़ हीटमैप',
@@ -445,7 +445,7 @@ export const translations = {
       analyticsTab: 'फुटफॉल एनालिटिक्स',
       monitoringTab: 'लाइव निगरानी'
     },
-    
+
     // Status messages
     status: {
       low: 'कम',
@@ -458,7 +458,7 @@ export const translations = {
       error: 'त्रुटि',
       warning: 'चेतावनी'
     },
-    
+
     // Emergency
     emergency: {
       sos: 'आपातकालीन SOS',
@@ -468,7 +468,7 @@ export const translations = {
       securityHelp: 'सुरक्षा सहायता',
       fireEmergency: 'अग्निशामक आपातकाल'
     },
-    
+
     // Booking
     booking: {
       selectTemple: 'मंदिर चुनें',
@@ -512,7 +512,7 @@ export const translations = {
       darshanBookingConfirmed: 'दर्शन बुकिंग की पुष्टि हो गई! विवरण के लिए मेरी बुकिंग देखें।',
       creatingBooking: 'बुकिंग बनाई जा रही है...'
     },
-    
+
     // My Bookings
     myBookings: {
       title: 'मेरी बुकिंग',
@@ -539,7 +539,7 @@ export const translations = {
       bookingCancelled: 'बुकिंग सफलतापूर्वक रद्द हो गई',
       failedToCancelBooking: 'बुकिंग रद्द करने में विफल'
     },
-    
+
     // Facilities & Transport
     facilities: {
       facilitiesMap: 'सुविधाएं मानचित्र',
@@ -559,7 +559,7 @@ export const translations = {
       active: 'सक्रिय',
       capacity: 'क्षमता'
     },
-    
+
     transport: {
       liveShuttleTracking: 'लाइव शटल ट्रैकिंग',
       realTimeLocation: 'शटल सेवाओं की रियल-टाइम स्थान और उपलब्धता',
@@ -594,7 +594,7 @@ export const translations = {
       spacesFree: 'जगहें खाली',
       nearlyFull: 'लगभग भरा हुआ'
     },
-    
+
     // Crowd Avoidance
     crowdAvoidance: {
       title: 'भीड़ बचाव गाइड',
@@ -625,7 +625,7 @@ export const translations = {
       avoid: 'बचें',
       peak: 'पीक'
     },
-    
+
     // Historical Incidents
     historicalIncidents: {
       title: 'ऐतिहासिक घटनाएं',
@@ -658,7 +658,7 @@ export const translations = {
       stable: 'स्थिर',
       increasing: 'बढ़ रहा है'
     },
-    
+
     // Special Assistance
     specialAssistance: {
       title: 'विशेष सहायता सेवाएं',
@@ -691,7 +691,7 @@ export const translations = {
       moreServices: 'अधिक सेवाएं',
       assistanceRequestSubmitted: 'विशेष सहायता अनुरोध सफलतापूर्वक सबमिट किया गया! आपसे 30 मिनट के भीतर संपर्क किया जाएगा।'
     },
-    
+
     // Dashboard
     dashboard: {
       welcomeToTemples: 'गुजरात के पवित्र मंदिरों में आपका स्वागत है',
@@ -710,7 +710,7 @@ export const translations = {
       liveStats: 'लाइव आंकड़े',
       min: 'मिनट'
     },
-    
+
     // QR Code Display
     qrCode: {
       darshanBookingQRCode: 'दर्शन बुकिंग QR कोड',
@@ -731,7 +731,7 @@ export const translations = {
       qrCodeNotAvailable: 'QR कोड उपलब्ध नहीं है'
     }
   },
-  
+
   gu: {
     // Common translations
     appName: 'મંદિર ઇનસાઇટ 360',
@@ -741,16 +741,16 @@ export const translations = {
     bookings: 'બુકિંગ',
     assistance: 'સહાયતા',
     incidents: 'ઘટનાઓ',
-    facilities: 'સુવિધાઓ',
-    transport: 'પરિવહન',
-    dashboard: 'ડેશબોર્ડ',
+    facilitiesLabel: 'સુવિધાઓ',
+    transportLabel: 'પરિવહન',
+    dashboardLabel: 'ડેશબોર્ડ',
     heatMap: 'હીટ મેપ',
     alerts: 'અલર્ટ',
     resources: 'સંસાધનો',
     analytics: 'એનાલિટિક્સ',
     monitoring: 'મોનિટરિંગ',
     language: 'ભાષા',
-    
+
     // Temple names
     temples: {
       somnath: 'સોમનાથ મંદિર',
@@ -758,7 +758,7 @@ export const translations = {
       ambaji: 'અંબાજી મંદિર',
       pavagadh: 'કાલિકા માતા મંદિર'
     },
-    
+
     // Zone names
     zones: {
       mainDarshan: 'મુખ્ય દર્શન હોલ',
@@ -769,13 +769,13 @@ export const translations = {
       gabbarHill: 'ગબ્બર હિલ પાથ',
       ropeway: 'રોપવે સ્ટેશન'
     },
-    
+
     // Pilgrim Interface
     pilgrim: {
       title: 'યાત્રી',
       description: 'તમારી આધ્યાત્મિક યાત્રા અહીંથી શરૂ થાય છે',
       welcomeMessage: 'તમારી આધ્યાત્મિક યાત્રામાં આપનું સ્વાગત છે',
-      
+
       // Navigation
       homeTab: 'હોમ',
       bookingsTab: 'દર્શન બુકિંગ',
@@ -783,7 +783,7 @@ export const translations = {
       incidentsTab: 'સુરક્ષા રિપોર્ટ',
       facilitiesTab: 'મંદિર નકશો',
       transportTab: 'પરિવહન',
-      
+
       // Features
       features: {
         bookDarshan: 'દર્શન બુક કરો',
@@ -794,14 +794,14 @@ export const translations = {
         transportInfo: 'પરિવહન સહાય'
       }
     },
-    
+
     // Authority Interface
     authority: {
       title: 'અધિકારી',
       subtitle: 'અધિકારી ડેશબોર્ડ',
       description: 'મંદિર વ્યવસ્થાપન અને મોનિટરિંગ સિસ્ટમ',
       active: 'સક્રિય',
-      
+
       // Navigation
       dashboardTab: 'ઓવરવ્યુ',
       heatmapTab: 'ભીડ હીટમેપ',
@@ -810,7 +810,7 @@ export const translations = {
       analyticsTab: 'ફૂટફોલ એનાલિટિક્સ',
       monitoringTab: 'લાઇવ મોનિટરિંગ'
     },
-    
+
     // Status messages
     status: {
       low: 'ઓછું',
@@ -823,7 +823,7 @@ export const translations = {
       error: 'ભૂલ',
       warning: 'ચેતવણી'
     },
-    
+
     // Emergency
     emergency: {
       sos: 'કટોકટી SOS',
@@ -833,7 +833,7 @@ export const translations = {
       securityHelp: 'સુરક્ષા મદદ',
       fireEmergency: 'આગ કટોકટી'
     },
-    
+
     // Booking
     booking: {
       selectTemple: 'મંદિર પસંદ કરો',
@@ -877,7 +877,7 @@ export const translations = {
       darshanBookingConfirmed: 'દર્શન બુકિંગની પુષ્ટિ થઈ! વિગતો માટે મારી બુકિંગ જુઓ.',
       creatingBooking: 'બુકિંગ બનાવી રહ્યા છીએ...'
     },
-    
+
     // My Bookings
     myBookings: {
       title: 'મારી બુકિંગ',
@@ -904,7 +904,7 @@ export const translations = {
       bookingCancelled: 'બુકિંગ સફળતાપૂર્વક રદ થઈ',
       failedToCancelBooking: 'બુકિંગ રદ કરવામાં નિષ્ફળ'
     },
-    
+
     // Facilities & Transport
     facilities: {
       facilitiesMap: 'સુવિધાઓ નકશો',
@@ -924,7 +924,7 @@ export const translations = {
       active: 'સક્રિય',
       capacity: 'ક્ષમતા'
     },
-    
+
     transport: {
       liveShuttleTracking: 'લાઇવ શટલ ટ્રેકિંગ',
       realTimeLocation: 'શટલ સેવાઓની રિયલ-ટાઇમ સ્થાન અને ઉપલબ્ધતા',
@@ -959,7 +959,7 @@ export const translations = {
       spacesFree: 'જગ્યાઓ ખાલી',
       nearlyFull: 'લગભગ ભરેલું'
     },
-    
+
     // Crowd Avoidance
     crowdAvoidance: {
       title: 'ભીડ ટાળવાની માર્ગદર્શિકા',
@@ -990,7 +990,7 @@ export const translations = {
       avoid: 'ટાળો',
       peak: 'પીક'
     },
-    
+
     // Historical Incidents
     historicalIncidents: {
       title: 'ઐતિહાસિક ઘટનાઓ',
@@ -1023,7 +1023,7 @@ export const translations = {
       stable: 'સ્થિર',
       increasing: 'વધી રહ્યું છે'
     },
-    
+
     // Special Assistance
     specialAssistance: {
       title: 'વિશેષ સહાય સેવાઓ',
@@ -1056,7 +1056,7 @@ export const translations = {
       moreServices: 'વધુ સેવાઓ',
       assistanceRequestSubmitted: 'વિશેષ સહાય વિનંતી સફળતાપૂર્વક સબમિટ થઈ! તમને 30 મિનિટની અંદર સંપર્ક કરવામાં આવશે.'
     },
-    
+
     // Dashboard
     dashboard: {
       welcomeToTemples: 'ગુજરાતના પવિત્ર મંદિરોમાં આપનું સ્વાગત છે',
@@ -1075,7 +1075,7 @@ export const translations = {
       liveStats: 'લાઇવ આંકડા',
       min: 'મિનિટ'
     },
-    
+
     // QR Code Display
     qrCode: {
       darshanBookingQRCode: 'દર્શન બુકિંગ QR કોડ',
@@ -1101,7 +1101,7 @@ export const translations = {
 export const getTranslation = (language: Language, key: string): string => {
   const keys = key.split('.');
   let value: any = translations[language];
-  
+
   for (const k of keys) {
     if (value && typeof value === 'object' && k in value) {
       value = value[k];
@@ -1118,7 +1118,7 @@ export const getTranslation = (language: Language, key: string): string => {
       break;
     }
   }
-  
+
   return typeof value === 'string' ? value : key;
 };
 

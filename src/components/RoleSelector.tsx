@@ -97,7 +97,7 @@ const RoleSelector: React.FC<RoleSelectorProps> = ({ onRoleSelect }) => {
 
   const t = text[language as keyof typeof text];
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 to-white flex items-center justify-center p-4">
+    <div className="min-h-screen bg-gradient-to-br from-orange-50 to-white flex items-center justify-center p-4">
       <div className="max-w-4xl w-full">
         <div className="text-center mb-8">
           <div className="flex justify-end mb-4">
@@ -125,10 +125,10 @@ const RoleSelector: React.FC<RoleSelectorProps> = ({ onRoleSelect }) => {
 
         <div className="grid md:grid-cols-2 gap-8">
           {/* Pilgrim Interface */}
-          <Card className="hover:shadow-lg transition-all duration-300 border-purple-200 hover:border-purple-300">
+          <Card className="hover:shadow-lg transition-all duration-300 border-orange-200 hover:border-orange-300">
             <CardHeader className="text-center pb-4">
-              <div className="w-16 h-16 bg-gradient-to-r from-purple-100 to-violet-100 rounded-full mx-auto mb-4 flex items-center justify-center">
-                <Users className="h-8 w-8 text-purple-600" />
+              <div className="w-16 h-16 bg-gradient-to-r from-orange-100 to-amber-100 rounded-full mx-auto mb-4 flex items-center justify-center">
+                <Users className="h-8 w-8 text-orange-600" />
               </div>
               <CardTitle className="text-xl">{t.pilgrimTitle}</CardTitle>
               <CardDescription className="text-gray-600">
@@ -139,15 +139,15 @@ const RoleSelector: React.FC<RoleSelectorProps> = ({ onRoleSelect }) => {
               <div className="space-y-3 text-sm text-gray-700">
                 {t.pilgrimFeatures.map((feature, index) => (
                   <div key={index} className="flex items-center gap-2">
-                    <div className="w-2 h-2 bg-purple-400 rounded-full"></div>
+                    <div className="w-2 h-2 bg-orange-400 rounded-full"></div>
                     <span>{feature}</span>
                   </div>
                 ))}
               </div>
-              
-              <Button 
+
+              <Button
                 onClick={() => onRoleSelect('pilgrim')}
-                className="w-full bg-purple-600 hover:bg-purple-700 text-white"
+                className="w-full bg-orange-600 hover:bg-orange-700 text-white"
                 size="lg"
               >
                 {t.pilgrimEnter}
@@ -157,10 +157,10 @@ const RoleSelector: React.FC<RoleSelectorProps> = ({ onRoleSelect }) => {
           </Card>
 
           {/* Authority Interface */}
-          <Card className="hover:shadow-lg transition-all duration-300 border-purple-200 hover:border-purple-300">
+          <Card className="hover:shadow-lg transition-all duration-300 border-orange-200 hover:border-orange-300">
             <CardHeader className="text-center pb-4">
-              <div className="w-16 h-16 bg-gradient-to-r from-violet-100 to-purple-100 rounded-full mx-auto mb-4 flex items-center justify-center">
-                <Shield className="h-8 w-8 text-violet-600" />
+              <div className="w-16 h-16 bg-gradient-to-r from-amber-100 to-orange-100 rounded-full mx-auto mb-4 flex items-center justify-center">
+                <Shield className="h-8 w-8 text-amber-600" />
               </div>
               <CardTitle className="text-xl">{t.authorityTitle}</CardTitle>
               <CardDescription className="text-gray-600">
@@ -171,15 +171,15 @@ const RoleSelector: React.FC<RoleSelectorProps> = ({ onRoleSelect }) => {
               <div className="space-y-3 text-sm text-gray-700">
                 {t.authorityFeatures.map((feature, index) => (
                   <div key={index} className="flex items-center gap-2">
-                    <div className="w-2 h-2 bg-violet-400 rounded-full"></div>
+                    <div className="w-2 h-2 bg-amber-400 rounded-full"></div>
                     <span>{feature}</span>
                   </div>
                 ))}
               </div>
-              
-              <Button 
+
+              <Button
                 onClick={() => onRoleSelect('authority')}
-                className="w-full bg-violet-600 hover:bg-violet-700 text-white"
+                className="w-full bg-amber-600 hover:bg-amber-700 text-white"
                 size="lg"
               >
                 {t.authorityEnter}

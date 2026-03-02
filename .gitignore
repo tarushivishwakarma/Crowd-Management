@@ -1,0 +1,22 @@
+# dependencies
+node_modules/
+
+# production build
+dist/
+build/
+
+# misc
+.DS_Store
+*.local
+*.log
+
+# editor
+.vscode/
+.idea/
+
+# temp files
+fix-imports.ps1
+fix-translations.ps1
+tsc_errors.txt
+build_output.txt
+build_output2.txt

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Button } from "./components/ui/button";
-import { toast, Toaster } from "sonner@2.0.3";
+import { toast, Toaster } from "sonner";
 
 import PilgrimInterface from "./components/pilgrim/PilgrimInterface";
 import AuthorityInterface from "./components/authority/AuthorityInterface";

@@ -70,7 +70,7 @@ const FootfallAnalytics = ({ templeData, selectedTemple, onTempleChange }) => {
       <Card>
         <CardHeader>
           <CardTitle className="flex items-center gap-2">
-            <BarChart3 className="h-5 w-5 text-violet-600" />
+            <BarChart3 className="h-5 w-5 text-amber-600" />
             Footfall Analytics - {currentTemple.name}
           </CardTitle>
           <CardDescription>
@@ -86,12 +86,12 @@ const FootfallAnalytics = ({ templeData, selectedTemple, onTempleChange }) => {
             <div className="flex items-center justify-between">
               <div>
                 <p className="text-sm font-medium text-gray-600">Today's Visitors</p>
-                <p className="text-3xl font-bold text-violet-600">{analyticsData.summary.today.toLocaleString()}</p>
+                <p className="text-3xl font-bold text-amber-600">{analyticsData.summary.today.toLocaleString()}</p>
                 <p className="text-xs text-green-600 mt-1">
                   +{Math.round(((analyticsData.summary.today - analyticsData.summary.yesterday) / analyticsData.summary.yesterday) * 100)}% from yesterday
                 </p>
               </div>
-              <Users className="h-8 w-8 text-violet-600" />
+              <Users className="h-8 w-8 text-amber-600" />
             </div>
           </CardContent>
         </Card>
@@ -101,10 +101,10 @@ const FootfallAnalytics = ({ templeData, selectedTemple, onTempleChange }) => {
             <div className="flex items-center justify-between">
               <div>
                 <p className="text-sm font-medium text-gray-600">Weekly Total</p>
-                <p className="text-3xl font-bold text-violet-600">{analyticsData.summary.thisWeek.toLocaleString()}</p>
+                <p className="text-3xl font-bold text-amber-600">{analyticsData.summary.thisWeek.toLocaleString()}</p>
                 <p className="text-xs text-blue-600 mt-1">Peak: {analyticsData.summary.peakDay}</p>
               </div>
-              <Calendar className="h-8 w-8 text-violet-600" />
+              <Calendar className="h-8 w-8 text-amber-600" />
             </div>
           </CardContent>
         </Card>
@@ -114,10 +114,10 @@ const FootfallAnalytics = ({ templeData, selectedTemple, onTempleChange }) => {
             <div className="flex items-center justify-between">
               <div>
                 <p className="text-sm font-medium text-gray-600">Peak Hour</p>
-                <p className="text-2xl font-bold text-violet-600">{analyticsData.summary.peakHour}</p>
+                <p className="text-2xl font-bold text-amber-600">{analyticsData.summary.peakHour}</p>
                 <p className="text-xs text-orange-600 mt-1">Highest traffic</p>
               </div>
-              <TrendingUp className="h-8 w-8 text-violet-600" />
+              <TrendingUp className="h-8 w-8 text-amber-600" />
             </div>
           </CardContent>
         </Card>
@@ -127,10 +127,10 @@ const FootfallAnalytics = ({ templeData, selectedTemple, onTempleChange }) => {
             <div className="flex items-center justify-between">
               <div>
                 <p className="text-sm font-medium text-gray-600">Avg Duration</p>
-                <p className="text-3xl font-bold text-violet-600">{analyticsData.summary.avgDuration}</p>
+                <p className="text-3xl font-bold text-amber-600">{analyticsData.summary.avgDuration}</p>
                 <p className="text-xs text-gray-600 mt-1">Per visitor</p>
               </div>
-              <BarChart3 className="h-8 w-8 text-violet-600" />
+              <BarChart3 className="h-8 w-8 text-amber-600" />
             </div>
           </CardContent>
         </Card>
@@ -142,7 +142,7 @@ const FootfallAnalytics = ({ templeData, selectedTemple, onTempleChange }) => {
           <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center justify-between">
             <div className="flex items-center gap-4">
               <div className="flex items-center gap-2">
-                <Filter className="h-4 w-4 text-violet-600" />
+                <Filter className="h-4 w-4 text-amber-600" />
                 <span className="font-medium">View:</span>
               </div>
               
@@ -259,7 +259,7 @@ const FootfallAnalytics = ({ templeData, selectedTemple, onTempleChange }) => {
                 <Card key={index} className="p-4">
                   <div className="flex items-center justify-between mb-3">
                     <h4 className="font-medium">{zone.name}</h4>
-                    <Badge className="bg-violet-100 text-violet-800">
+                    <Badge className="bg-amber-100 text-amber-800">
                       {zone.visitors.toLocaleString()} visitors
                     </Badge>
                   </div>
@@ -275,11 +275,11 @@ const FootfallAnalytics = ({ templeData, selectedTemple, onTempleChange }) => {
                     
                     <div className="grid grid-cols-2 gap-4 text-sm">
                       <div>
-                        <div className="font-medium text-violet-600">{zone.avgTime}min</div>
+                        <div className="font-medium text-amber-600">{zone.avgTime}min</div>
                         <div className="text-gray-600">Avg Duration</div>
                       </div>
                       <div>
-                        <div className="font-medium text-violet-600">{Math.round(zone.visitors / 24)}/hr</div>
+                        <div className="font-medium text-amber-600">{Math.round(zone.visitors / 24)}/hr</div>
                         <div className="text-gray-600">Hourly Rate</div>
                       </div>
                     </div>

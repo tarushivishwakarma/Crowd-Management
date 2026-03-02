@@ -22,27 +22,27 @@ interface AuthorityInterfaceProps {
   onBackToRoleSelector: () => void;
 }
 
-const AuthorityInterface: React.FC<AuthorityInterfaceProps> = ({ 
-  templeData, 
-  selectedTemple, 
-  onTempleChange, 
-  events, 
-  setEvents, 
-  onBackToRoleSelector 
+const AuthorityInterface: React.FC<AuthorityInterfaceProps> = ({
+  templeData,
+  selectedTemple,
+  onTempleChange,
+  events,
+  setEvents,
+  onBackToRoleSelector
 }) => {
   const [activeTab, setActiveTab] = useState('dashboard');
   const [language, setLanguage] = useState<Language>('en');
-  
+
   const t = (key: string) => getTranslation(language, key);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-violet-50 to-white">
+    <div className="min-h-screen bg-gradient-to-br from-amber-50 to-white">
       {/* Header */}
-      <header className="bg-white shadow-sm border-b border-violet-200">
+      <header className="bg-white shadow-sm border-b border-amber-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
             <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-gradient-to-r from-violet-600 to-purple-600 rounded-lg flex items-center justify-center">
+              <div className="w-10 h-10 bg-gradient-to-r from-amber-600 to-orange-600 rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold">TI</span>
               </div>
               <div>
@@ -65,7 +65,7 @@ const AuthorityInterface: React.FC<AuthorityInterfaceProps> = ({
               <div className="text-right">
                 <p className="text-sm font-medium text-gray-900">{t('authority.subtitle')}</p>
                 <div className="flex gap-2">
-                  <Badge variant="outline" className="bg-violet-50 text-violet-700 border-violet-200">
+                  <Badge variant="outline" className="bg-amber-50 text-amber-700 border-amber-200">
                     <Shield className="h-3 w-3 mr-1" />
                     {t('authority.title')}
                   </Badge>
@@ -76,11 +76,11 @@ const AuthorityInterface: React.FC<AuthorityInterfaceProps> = ({
                 </div>
               </div>
               <div className="flex gap-2">
-                <Button 
+                <Button
                   onClick={onBackToRoleSelector}
                   variant="outline"
                   size="sm"
-                  className="text-violet-600 border-violet-200 hover:bg-violet-50"
+                  className="text-amber-600 border-amber-200 hover:bg-amber-50"
                 >
                   <ArrowLeft className="h-4 w-4 mr-2" />
                   {t('back')}
@@ -94,10 +94,10 @@ const AuthorityInterface: React.FC<AuthorityInterfaceProps> = ({
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
         <Tabs value={activeTab} onValueChange={setActiveTab} className="space-y-6">
           {/* Navigation Tabs */}
-          <TabsList className="grid w-full grid-cols-6 lg:w-auto lg:inline-flex bg-white border border-violet-200">
+          <TabsList className="grid w-full grid-cols-6 lg:w-auto lg:inline-flex bg-white border border-amber-200">
             <TabsTrigger value="dashboard" className="flex items-center gap-2">
               <BarChart3 className="h-4 w-4" />
-              <span className="hidden sm:inline">{t('dashboard')}</span>
+              <span className="hidden sm:inline">{t('dashboardLabel')}</span>
             </TabsTrigger>
             <TabsTrigger value="heatmap" className="flex items-center gap-2">
               <Activity className="h-4 w-4" />
@@ -124,7 +124,7 @@ const AuthorityInterface: React.FC<AuthorityInterfaceProps> = ({
           {/* Tab Contents */}
           <div className="space-y-6">
             <TabsContent value="dashboard">
-              <AuthorityDashboard 
+              <AuthorityDashboard
                 templeData={templeData}
                 selectedTemple={selectedTemple}
                 onTempleChange={onTempleChange}
@@ -134,7 +134,7 @@ const AuthorityInterface: React.FC<AuthorityInterfaceProps> = ({
             </TabsContent>
 
             <TabsContent value="heatmap">
-              <CrowdHeatmap 
+              <CrowdHeatmap
                 templeData={templeData}
                 selectedTemple={selectedTemple}
                 onTempleChange={onTempleChange}
@@ -143,7 +143,7 @@ const AuthorityInterface: React.FC<AuthorityInterfaceProps> = ({
             </TabsContent>
 
             <TabsContent value="alerts">
-              <AlertsManagement 
+              <AlertsManagement
                 templeData={templeData}
                 selectedTemple={selectedTemple}
                 events={events}
@@ -153,7 +153,7 @@ const AuthorityInterface: React.FC<AuthorityInterfaceProps> = ({
             </TabsContent>
 
             <TabsContent value="resources">
-              <ResourceManagement 
+              <ResourceManagement
                 templeData={templeData}
                 selectedTemple={selectedTemple}
                 onTempleChange={onTempleChange}
@@ -162,7 +162,7 @@ const AuthorityInterface: React.FC<AuthorityInterfaceProps> = ({
             </TabsContent>
 
             <TabsContent value="analytics">
-              <FootfallAnalytics 
+              <FootfallAnalytics
                 templeData={templeData}
                 selectedTemple={selectedTemple}
                 onTempleChange={onTempleChange}
@@ -171,7 +171,7 @@ const AuthorityInterface: React.FC<AuthorityInterfaceProps> = ({
             </TabsContent>
 
             <TabsContent value="monitoring">
-              <SmartMonitoring 
+              <SmartMonitoring
                 templeData={templeData}
                 selectedTemple={selectedTemple}
                 events={events}

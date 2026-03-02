@@ -6,7 +6,7 @@ import { Button } from './ui/button';
 import { Alert, AlertDescription } from './ui/alert';
 import QRCodeDisplay from './QRCodeDisplay';
 import { bookingsApi, useApi } from '../services/api';
-import { toast } from 'sonner@2.0.3';
+import { toast } from 'sonner';
 import { Language, getTranslation } from '../utils/translations';
 
 interface MyBookingsProps {

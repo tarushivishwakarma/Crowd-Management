@@ -70,7 +70,7 @@ const ResourceManagement = ({ templeData, selectedTemple, onTempleChange }) => {
       <Card>
         <CardHeader>
           <CardTitle className="flex items-center gap-2">
-            <Settings className="h-5 w-5 text-violet-600" />
+            <Settings className="h-5 w-5 text-amber-600" />
             Resource Management - {currentTemple.name}
           </CardTitle>
           <CardDescription>
@@ -83,7 +83,7 @@ const ResourceManagement = ({ templeData, selectedTemple, onTempleChange }) => {
       <Card>
         <CardHeader>
           <CardTitle className="flex items-center gap-2">
-            <Users className="h-5 w-5 text-violet-600" />
+            <Users className="h-5 w-5 text-amber-600" />
             Staff Deployment
           </CardTitle>
           <CardDescription>Current staff allocation and requirements</CardDescription>
@@ -133,7 +133,7 @@ const ResourceManagement = ({ templeData, selectedTemple, onTempleChange }) => {
       <Card>
         <CardHeader>
           <CardTitle className="flex items-center gap-2">
-            <Camera className="h-5 w-5 text-violet-600" />
+            <Camera className="h-5 w-5 text-amber-600" />
             Equipment & Technology
           </CardTitle>
           <CardDescription>Real-time equipment status and control</CardDescription>
@@ -182,7 +182,7 @@ const ResourceManagement = ({ templeData, selectedTemple, onTempleChange }) => {
       <Card>
         <CardHeader>
           <CardTitle className="flex items-center gap-2">
-            <CheckCircle className="h-5 w-5 text-violet-600" />
+            <CheckCircle className="h-5 w-5 text-amber-600" />
             Facility Operations
           </CardTitle>
           <CardDescription>Current status of all temple facilities</CardDescription>
@@ -193,7 +193,7 @@ const ResourceManagement = ({ templeData, selectedTemple, onTempleChange }) => {
               <Card key={facility} className="p-4 text-center">
                 <div className="mb-3">
                   <h4 className="font-medium capitalize mb-2">{facility} Points</h4>
-                  <div className="text-2xl font-bold text-violet-600">
+                  <div className="text-2xl font-bold text-amber-600">
                     {data.operational}/{data.total}
                   </div>
                 </div>
@@ -216,7 +216,7 @@ const ResourceManagement = ({ templeData, selectedTemple, onTempleChange }) => {
       <Card>
         <CardHeader>
           <CardTitle className="flex items-center gap-2">
-            <Battery className="h-5 w-5 text-violet-600" />
+            <Battery className="h-5 w-5 text-amber-600" />
             Utilities & Infrastructure
           </CardTitle>
           <CardDescription>Real-time monitoring of essential utilities</CardDescription>

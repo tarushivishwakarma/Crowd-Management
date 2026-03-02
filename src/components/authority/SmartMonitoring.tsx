@@ -110,7 +110,7 @@ const SmartMonitoring = ({ templeData, selectedTemple, events }) => {
           <div className="flex items-center justify-between">
             <div>
               <CardTitle className="flex items-center gap-2">
-                <Eye className="h-5 w-5 text-violet-600" />
+                <Eye className="h-5 w-5 text-amber-600" />
                 Smart Monitoring System - {currentTemple.name}
               </CardTitle>
               <CardDescription>
@@ -138,11 +138,11 @@ const SmartMonitoring = ({ templeData, selectedTemple, events }) => {
             <div className="flex items-center justify-between">
               <div>
                 <p className="text-sm font-medium text-gray-600">Active Cameras</p>
-                <p className="text-3xl font-bold text-violet-600">
+                <p className="text-3xl font-bold text-amber-600">
                   {monitoringData.cameras.filter(c => c.status === 'active').length}
                 </p>
               </div>
-              <Camera className="h-8 w-8 text-violet-600" />
+              <Camera className="h-8 w-8 text-amber-600" />
             </div>
           </CardContent>
         </Card>
@@ -188,7 +188,7 @@ const SmartMonitoring = ({ templeData, selectedTemple, events }) => {
       <Card>
         <CardHeader>
           <CardTitle className="flex items-center gap-2">
-            <Camera className="h-5 w-5 text-violet-600" />
+            <Camera className="h-5 w-5 text-amber-600" />
             Live Camera Feed
           </CardTitle>
           <CardDescription>Real-time video surveillance across temple premises</CardDescription>
@@ -202,7 +202,7 @@ const SmartMonitoring = ({ templeData, selectedTemple, events }) => {
                 <div 
                   key={camera.id}
                   className={`p-3 border rounded-lg cursor-pointer transition-colors ${
-                    selectedCamera === camera.id ? 'bg-violet-50 border-violet-200' : 'hover:bg-gray-50'
+                    selectedCamera === camera.id ? 'bg-amber-50 border-amber-200' : 'hover:bg-gray-50'
                   }`}
                   onClick={() => setSelectedCamera(camera.id)}
                 >
@@ -267,7 +267,7 @@ const SmartMonitoring = ({ templeData, selectedTemple, events }) => {
       <Card>
         <CardHeader>
           <CardTitle className="flex items-center gap-2">
-            <Thermometer className="h-5 w-5 text-violet-600" />
+            <Thermometer className="h-5 w-5 text-amber-600" />
             Environmental Monitoring
           </CardTitle>
           <CardDescription>Real-time environmental conditions and air quality</CardDescription>
@@ -285,7 +285,7 @@ const SmartMonitoring = ({ templeData, selectedTemple, events }) => {
                 
                 <div className="space-y-3">
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-violet-600">
+                    <div className="text-3xl font-bold text-amber-600">
                       {data.value.toFixed(1)}{data.unit}
                     </div>
                     <div className="text-sm text-gray-600">
@@ -325,7 +325,7 @@ const SmartMonitoring = ({ templeData, selectedTemple, events }) => {
         <Card>
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
-              <Wifi className="h-5 w-5 text-violet-600" />
+              <Wifi className="h-5 w-5 text-amber-600" />
               Network Performance
             </CardTitle>
           </CardHeader>
@@ -345,7 +345,7 @@ const SmartMonitoring = ({ templeData, selectedTemple, events }) => {
               
               <div className="grid grid-cols-2 gap-4 mt-4">
                 <div className="text-center">
-                  <div className="font-medium text-violet-600">{monitoringData.network.devices}</div>
+                  <div className="font-medium text-amber-600">{monitoringData.network.devices}</div>
                   <div className="text-sm text-gray-600">Connected Devices</div>
                 </div>
                 <div className="text-center">
@@ -360,7 +360,7 @@ const SmartMonitoring = ({ templeData, selectedTemple, events }) => {
         <Card>
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
-              <Shield className="h-5 w-5 text-violet-600" />
+              <Shield className="h-5 w-5 text-amber-600" />
               Security Dashboard
             </CardTitle>
           </CardHeader>
@@ -380,7 +380,7 @@ const SmartMonitoring = ({ templeData, selectedTemple, events }) => {
                   <div className="text-sm text-gray-600">Avg Response</div>
                 </div>
                 <div className="text-center">
-                  <div className="font-medium text-violet-600">{monitoringData.security.staffOnline}</div>
+                  <div className="font-medium text-amber-600">{monitoringData.security.staffOnline}</div>
                   <div className="text-sm text-gray-600">Staff Online</div>
                 </div>
               </div>
@@ -400,7 +400,7 @@ const SmartMonitoring = ({ templeData, selectedTemple, events }) => {
       <Card>
         <CardHeader>
           <CardTitle className="flex items-center gap-2">
-            <Activity className="h-5 w-5 text-violet-600" />
+            <Activity className="h-5 w-5 text-amber-600" />
             Monitoring Log
           </CardTitle>
           <CardDescription>Recent events detected by the monitoring system</CardDescription>
