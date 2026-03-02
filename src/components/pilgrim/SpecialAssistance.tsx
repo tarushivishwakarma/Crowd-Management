@@ -327,7 +327,7 @@ const SpecialAssistance: React.FC<SpecialAssistanceProps> = ({ selectedTemple, t
         <MapPin className="h-4 w-4 text-blue-600" />
         <AlertDescription>
           <strong>Location Services:</strong> All assistance services are available at dedicated counters
-          near the main entrance. Look for the purple "Special Assistance" signage or ask any temple volunteer.
+          near the main entrance. Look for the orange "Special Assistance" signage or ask any temple volunteer.
         </AlertDescription>
       </Alert>
     </div>

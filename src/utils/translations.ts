@@ -321,7 +321,7 @@ export const translations = {
       medicalEmergency: 'Medical Emergency',
       templeSecurity: 'Temple Security',
       locationServices: 'Location Services',
-      assistanceServicesAvailable: 'All assistance services are available at dedicated counters near the main entrance. Look for the purple "Special Assistance" signage or ask any temple volunteer.',
+      assistanceServicesAvailable: 'All assistance services are available at dedicated counters near the main entrance. Look for the orange "Special Assistance" signage or ask any temple volunteer.',
       completeServices: 'Complete Services',
       moreServices: 'more services',
       assistanceRequestSubmitted: 'Special assistance request submitted successfully! You will be contacted within 30 minutes.'
